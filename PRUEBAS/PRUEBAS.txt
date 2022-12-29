@@ -1,0 +1,10 @@
+       const stop = tasks.map((task) => {
+          return `
+              <div class="task">
+                <div class="pause">
+                  <button class="stop-button" data-id="${task.id}">Start</button></div>
+                <div class="title">${task.title}</div>
+              </div>`;
+        });
+        const stopContainer = document.querySelector("#pause");
+        stopContainer.innerHTML= stop.join("")
